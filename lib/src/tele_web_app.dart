@@ -114,7 +114,7 @@ class TeleWebApp extends JsObjectWrapper<tele.WebAppJsImpl> {
   ///
   ///   {@macro event_type_main_button_clicked}
   void onEvent(WebAppEventType eventType, Function eventHandler) =>
-      jsObject.onEvent(eventType.name, allowInterop(() => eventHandler));
+      jsObject.onEvent(eventType.name, allowInterop(eventHandler));
 
   /// Deletes a previously set event handler.
   void offEvent(WebAppEventType eventType, Function eventHandler) =>

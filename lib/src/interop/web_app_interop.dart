@@ -33,7 +33,7 @@ abstract class WebAppJsImpl {
   external bool get isClosingConfirmationEnabled;
   external MainButtonJsImpl get MainButton;
   external BackButtonJsImpl get BackButton;
-  external void onEvent(String eventType, void Function() eventHandler);
+  external void onEvent(String eventType, Function eventHandler);
   external void offEvent(String eventType, void Function() eventHandler);
   external void sendData(String data);
   external void openLink(String url, [OpenLinkOptionsJsImpl? options]);
